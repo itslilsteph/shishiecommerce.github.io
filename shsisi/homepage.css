@@ -1,0 +1,395 @@
+/* Updated CSS Styles */
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+.header {
+    background-color: #565453;
+    color: #fff;
+    padding: 1px 0;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo Styles */
+.logo {
+    font-size: 55px;
+    color: #ff6600;
+    text-decoration: none;
+}
+
+/* Navigation Styles */
+.nav-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.nav-item {
+    margin-right: 20px;
+    position: relative; /* Add position relative for absolute positioning */
+}
+
+.nav-link {
+    text-decoration: none; /* Remove underlining */
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease, box-shadow 0.3s ease; /* Add box-shadow transition */
+    padding: 10px 20px; /* Add padding for clickable area */
+    position: relative; /* Add position relative for shadow */
+}
+
+
+/* Container Styles */
+.nav-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: transparent;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1; /* Place the shadow behind the link */
+}
+
+/* Add uniform box-shadow to the link */
+.nav-link:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Uniform shadow on hover */
+}
+
+/* Search Bar Styles */
+.search-bar {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.search-bar input {
+    padding: 15px; /* Increase the padding for the input field */
+    width: 70%; /* Increase the width of the input field */
+    border: 1px solid #ccc;
+    border-radius: 25px; /* Make the input field round */
+    font-size: 18px; /* Increase the font size */
+}
+
+.search-bar button {
+    padding: 15px 30px; /* Increase the padding for the button */
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 25px; /* Make the button round */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 18px; /* Increase the font size */
+}
+
+/* Add hover effect */
+.search-bar button:hover {
+    background-color: #ff4500; /* Change color on hover */
+    transform: scale(1.05); /* Scale up slightly on hover */
+}
+
+/* Add click effect */
+.search-bar button:active {
+    background-color: #ff3300; /* Change color when clicked */
+    transform: scale(0.95); /* Scale down slightly when clicked */
+}
+
+/* Advertisement Styles */
+.image-slideshow {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slideshow-container {
+    display: flex;
+    overflow: hidden;
+    animation: scroll 10s linear infinite; /* Adjust animation duration and timing function as needed */
+    margin: 0 50px;
+}
+
+.slide {
+    flex: 0 0 auto;
+    width: 651.2;
+    margin-right: 30px; /* Add a gap between the images */
+}
+
+.slide img {
+    width: 700px;
+    height: 350px;
+}
+
+
+/* Top Curations Styles */
+.top-curations {
+    display: flex;
+    justify-content: left;
+    margin: 5px 10px;
+}
+
+.top-curations1 {
+    margin: 10px 20px; /* Add some margin for spacing */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 4 columns */
+    gap: 20px; /* Gap between items */
+}
+
+.curations-card {
+    border: 1px solid #ccc;
+    padding: 7px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    display: flex; /* Use flex to stack content vertically */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+.curations-card img {
+    max-width: 100%;
+    height: 150px;
+    margin-bottom: 0; /* Add spacing between image and title */
+}
+
+.curations-card:hover {
+    transform: scale(1.15); /* Enlarge the card by 5% on hover */
+}
+
+/* Popular Cuisines Section */
+.popular-cuisines {
+    display: flex;
+    justify-content: left;
+    margin: 20px 10px;
+}
+
+.popular-cuisines1 {
+    margin: 10px 20px; /* Add some margin for spacing */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 4 columns */
+    gap: 20px; /* Gap between items */
+}
+
+.cuisine-card {
+    border: 1px solid #ccc;
+    padding: 7px; /* Adjust the padding as needed */
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cuisine-card img {
+    max-width: 100%;
+    height: 150px;
+    margin: 1px; /* Add spacing between image and title */
+}
+
+.cuisine-card:hover {
+    transform: scale(1.10); /* Enlarge the card by 5% on hover */
+}
+
+
+/* Popular Restaurants Section */
+.popular-restaurants {
+    display: flex;
+    justify-content: left;
+    margin: 20px 10px;
+}
+
+.popular-restaurants1 {
+    margin: 10px 20px; /* Add some margin for spacing */
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); /* 4 columns */
+    gap: 20px; /* Gap between items */
+}
+
+.restaurant-card img {
+    max-width: 100%;
+    height: 100px;
+    padding: 0 1px;
+}
+
+.restaurant-card:hover {
+    transform: scale(1.15); /* Enlarge the card by 5% on hover */
+}
+
+.image-slideshow2 {
+    text-align: center;
+    margin-top: 20px;
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    height: 500px; /* Set a fixed height for the slideshow */
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Center items horizontally within the container */
+    align-items: center; /* Center items vertically within the container */
+}
+
+.image-container img {
+    width: 1100px;
+    height: 450px;
+}
+
+/* Restaurants Near You Section */
+.restaurants-near-you {
+    display: flex;
+    justify-content: left;
+    margin: 20px 10px;
+}
+
+.restaurants-near-you1 {
+    margin: 30px 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.restaurantnear-card {
+    border: 1px solid #ccc;
+    padding: 7px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    display: flex; /* Use flex to stack content vertically */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+.restaurantnear-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0; /* Add spacing between image and title */
+}
+
+.restaurantnear-card:hover {
+    transform: scale(1.15); /* Enlarge the card by 5% on hover */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: top;
+    padding: 30px;
+}
+
+/* Footer Columns */
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1; /* Make columns equal width */
+    border-radius: 5px;
+    margin: 15px; /* Add margin around each column */
+    background-color: #444; /* Background color for each column */
+    padding-bottom: 80px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.footer-column .image-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-column .image-row a {
+    margin-top: 10px; /* Adjust the margin to control spacing between images */
+}
+
+.footer-column .image-row img {
+    max-width: 200px; /* Adjust the maximum width of the images */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Footer Content */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center vertically */
+    margin: 20px 0;
+}
+
+/* Copyright Statement */
+.copyright {
+    margin: 0; /* Remove default margin */
+}
+
+/* Social Media Links */
+.social-media-links {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Display links horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.social-media-links li {
+    margin-left: 10px; /* Adjust spacing between links */
+}
+
+.social-media-links a {
+    text-decoration: none;
+    color: #ffffff; /* Set link color */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.social-media-links a:hover {
+    color: #ff6600; /* Change link color on hover */
+}
+
+/* Style Headings */
+h4 {
+    font-size: 24px;
+    margin: 0px;
+    color: #ff6600;
+}
+
+/* Style Lists */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* Style Links */
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Copyright Statement */
+footer p {
+    margin: 1px 0; /* Adjust margin to move copyright statement closer to lists */
+}

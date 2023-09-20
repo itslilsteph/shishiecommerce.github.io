@@ -1,0 +1,227 @@
+/* Updated CSS Styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #565453;
+    color: #fff;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 3px;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li {
+    font-family: 'Lato', sans-serif;
+}
+
+/* Reduce the margin or padding between h1 and h2 */
+h1 {
+    margin-top: 10px;
+    margin-bottom: 0; /* Adjust the margin as needed */
+    font-size: 60px;
+}
+
+h2 {
+    margin-top: 0; /* Remove any top margin to reduce space */
+}
+
+/* Container styles */
+.scroll-container {
+    overflow: hidden;
+    width: 100%;
+}
+
+.scroll-content {
+    display: flex;
+    animation: scroll 50s linear infinite; /* Adjust animation duration and timing function as needed */
+    gap: 20px; /* Add spacing between images */
+    padding: 10px;
+    background-color: transparent;
+}
+
+/* Image styles */
+.scroll-content img {
+    max-width: 250px; /* Adjust the maximum width to your desired size */
+    height: 120px;
+    border-radius: 20px; /* Add rounded corners */
+    white-space: nowrap;
+}
+
+/* CSS Styles */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Background Image Section */
+.background-image {
+    position: relative;
+    background: url('homepagenull.jpg') center/cover no-repeat;
+    height: 500px; /* Adjust the height as needed */
+}
+
+.image-overlay {
+    position: relative;
+    background: rgba(0, 0, 0, 0.646); /* Semi-transparent overlay */
+    height: 100%;
+}
+
+.button-container {
+    position: absolute;
+    top: 50%; /* Adjust the vertical position */
+    left: 50%; /* Adjust the horizontal position */
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Business information message */
+#business-info {
+    color: white; /* Text color */
+    font-size: 40px; /* Font size */
+    margin-bottom: 10px; /* Spacing below the message */
+    font-weight: bold;
+}
+
+/* Message above buttons */
+#message {
+    color: white; /* Text color */
+    font-size: 30px; /* Font size */
+    margin-bottom: 60px; /* Spacing below the message */
+}
+
+.button1:hover,
+.button2:hover {
+    transform: scale(1.20); /* Slightly enlarge the button on hover */
+}
+
+.button1,
+.button2 {
+    background-color: grey; /* Customize button background color */
+    color: white; /* Customize button text color */
+    padding: 10px 40px; /* Adjust button padding */
+    margin: 10px; /* Adjust button margin */
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+    transition: transform 0.2s ease-in-out; /* Add smooth transition effect */
+}
+
+.button2 {
+    background-color: rgb(178, 55, 6); /* Customize second button color */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: top;
+    padding: 30px;
+}
+
+/* Footer Columns */
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1; /* Make columns equal width */
+    border-radius: 5px;
+    margin: 15px; /* Add margin around each column */
+    background-color: #444; /* Background color for each column */
+    padding-bottom: 80px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.footer-column .image-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-column .image-row a {
+    margin-top: 10px; /* Adjust the margin to control spacing between images */
+}
+
+.footer-column .image-row img {
+    max-width: 200px; /* Adjust the maximum width of the images */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Footer Content */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center vertically */
+    margin: 20px 0;
+}
+
+/* Copyright Statement */
+.copyright {
+    margin: 0; /* Remove default margin */
+}
+
+/* Social Media Links */
+.social-media-links {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Display links horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.social-media-links li {
+    margin-left: 10px; /* Adjust spacing between links */
+}
+
+.social-media-links a {
+    text-decoration: none;
+    color: #ffffff; /* Set link color */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.social-media-links a:hover {
+    color: #ff6600; /* Change link color on hover */
+}
+
+/* Style Headings */
+h4 {
+    font-size: 24px;
+    margin: 0px;
+}
+
+/* Style Lists */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* Style Links */
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Copyright Statement */
+footer p {
+    margin: 1px 0; /* Adjust margin to move copyright statement closer to lists */
+}
